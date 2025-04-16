@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style/style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 data-aos="fade-down">Hai Mona...</h1>
+    <p data-aos="fade-up">Aku cuma mau bilang...</p>
+    <button onclick="showMessage()">Klik Ya</button>
+    <p id="message" data-aos="fade-in" data-aos-delay="1000"></p>
+
+    <div class="controls" data-aos="fade-up" data-aos-delay="1000">
+      <button onclick="toggleMusic()">🎵 Putar / Pause Musik</button>
+      <button onclick="changeTheme()">🌈 Ganti Tema</button>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="audio/about-you.mp3" type="audio/mp3" />
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <canvas id="loveCanvas"></canvas>
+
+  <script src="script/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
