@@ -11,20 +11,20 @@
   
   body {
     margin: 0;
-    padding: 30px;
+    padding: 20px;
     background: linear-gradient(to right, var(--bg-start), var(--bg-end));
     font-family: 'Helvetica';
     text-align: center;
     color: #fff;
     overflow-x: hidden;
-    min-height: 110vh;
+    min-height: 10vh;
   }
   
   .container {
     max-width: 500px;
     margin: auto;
     background: rgba(255, 255, 255, 0.15);
-    padding: 30px 20px;
+    padding: 100px 20px;
     border-radius: 25px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -88,7 +88,7 @@
   /* Responsive styling */
   @media (max-width: 600px) {
     body {
-      padding: 10px;
+      padding: 70px;
       overflow-y: auto;
     }
   
