@@ -14,22 +14,27 @@
     padding: 20px;
     background: linear-gradient(to right, var(--bg-start), var(--bg-end));
     font-family: 'Helvetica';
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ini bikin elemen di body ketengah */
+    min-height: 100vh;
     color: #fff;
-    overflow-x: hidden;
-    min-height: 10vh;
   }
+  
   
   .container {
     max-width: 500px;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     background: rgba(255, 255, 255, 0.15);
-    padding: 100px 20px;
+    padding: 30px 20px;
     border-radius: 25px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 10;
+    text-align: center;
   }
+  
   
   h1 {
     font-size: 2.5em;
